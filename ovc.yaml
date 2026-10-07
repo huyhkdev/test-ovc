@@ -1,0 +1,17 @@
+schema: HR
+version: 1
+deploy:
+    allow_drop: false
+    recompile: true
+    fail_on_new_invalid: true
+exclude:
+    - SYS_*
+    - BIN$*
+    - MLOG$_*
+    - RUPD$_*
+    - TMP_*
+sync:
+    auto_sync: false
+    envs:
+        - dev
+        - prd
